@@ -5,7 +5,7 @@ using UnityEngine;
 public class FinishGame : MonoBehaviour
 {
    
-    void OnTriggerExit2D(Collision2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {

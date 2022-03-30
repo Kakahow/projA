@@ -7,6 +7,7 @@ public class parkingblock : MonoBehaviour
     SpriteRenderer m_ParkRenderer;
 
     public CarEntity targetObject;
+    public TankEntity targetObject1;
 
     
     void OnTriggerStay2D(Collider2D other)
@@ -15,7 +16,11 @@ public class parkingblock : MonoBehaviour
         {
             m_ParkRenderer.color = Color.green;
         }
-          
+        if (targetObject1.Check() == true)
+        {
+            m_ParkRenderer.color = Color.green;
+        }
+
     }
 
  
